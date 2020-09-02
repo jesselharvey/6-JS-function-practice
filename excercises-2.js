@@ -34,6 +34,16 @@ console.assert(maxOfThree(-12, 4, -5) === 4)
 // vowel, false otherwise.
 // ---------------------
 
+// function isVowel(x) {
+//   let x = ("a", "e", "i", "o", "u")
+//   console.log(x)
+//   if (x == true) {
+//     return true
+//   } else {
+//     return false
+//   }
+// }
+
 console.assert(isVowel(0) === false)
 console.assert(isVowel("B") === false)
 console.assert(isVowel("b") === false)
@@ -60,6 +70,10 @@ console.assert(rovarspraket(0) === "0")
 // of a string. For example, reverse("jag testar") should
 // return the string "ratset gaj".
 // ---------------------
+
+// function reverse(x) {
+//   let string = x
+// }
 
 console.assert(reverse("books") === "skoob")
 console.assert(
