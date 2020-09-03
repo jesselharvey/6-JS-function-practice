@@ -34,15 +34,35 @@ console.assert(maxOfThree(-12, 4, -5) === 4)
 // vowel, false otherwise.
 // ---------------------
 
-// function isVowel(x) {
-//   let x = ("a", "e", "i", "o", "u")
+// function isVowel(str) {
+//   const vowels = ["a", "e", "i", "o", "u"]
+//   let x = vowels.includes(vowels[0 - 4])
 //   console.log(x)
 //   if (x == true) {
 //     return true
-//   } else {
-//     return false
 //   }
+//   return false
 // }
+
+// function isVowel(str) {
+//   const vowels = ["a", "e", "i", "o", "u"]
+//   let x = vowels.includes(str)
+//   console.log(x)
+//   if (x == true) {
+//     return true
+//   }
+//   return false
+// }
+
+function isVowel(letter) {
+  const vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"]
+  let x = vowels.includes(letter)
+  console.log(x)
+  if (x == true) {
+    return true
+  }
+  return false
+}
 
 console.assert(isVowel(0) === false)
 console.assert(isVowel("B") === false)
@@ -58,6 +78,33 @@ console.assert(isVowel("2") === false)
 // For example, translate("this is fun") should return
 // the string "tothohisos isos fofunon".
 // ---------------------
+
+function rovarspraket(str) {
+  const vowels = ["a", "e", "i", "o", "u"]
+  const consonant = [
+    "b",
+    "c",
+    "d",
+    "f",
+    "g",
+    "h",
+    "j",
+    "k",
+    "l",
+    "m",
+    "n",
+    "p",
+    "q",
+    "r",
+    "s",
+    "t",
+    "v",
+    "w",
+    "x",
+    "y",
+    "z",
+  ]
+}
 
 console.assert(rovarspraket("a") === "a")
 console.assert(rovarspraket("b") === "bob")
